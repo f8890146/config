@@ -1,0 +1,20 @@
+server:
+  port: 7010
+
+spring:
+  application:
+    name: hystrix
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/   # ????
+
+ribbon:
+  eager-load:
+    enabled: true
+    clients: goods
+
+feign:
+  hystrix:
+    enabled: true

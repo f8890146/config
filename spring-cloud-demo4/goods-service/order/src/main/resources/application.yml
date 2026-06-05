@@ -1,0 +1,16 @@
+server:
+  port: 7002
+
+spring:
+  application:
+    name: order
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+  instance:
+    prefer-ip-address: true
+goods:  # 这里写的是被调用的服务名称（商品服务的 spring.application.name）
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

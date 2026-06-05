@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="goods" />
+        <module name="eureka-server" />
+        <module name="order" />
+        <module name="goods-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="course-list" target="1.8" />
+      <module name="course-price" target="1.8" />
+      <module name="course-service" target="1.8" />
+      <module name="course-zuul" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="goods" target="1.8" />
+      <module name="goods-list" target="1.8" />
+      <module name="goods-service" target="1.8" />
+      <module name="goods-zuul" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="spring-cloud-course-demo" target="1.8" />
+      <module name="spring-cloud-course-practice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="course-list" options="-parameters" />
+      <module name="course-price" options="-parameters" />
+      <module name="course-zuul" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="goods" options="-parameters" />
+      <module name="goods-list" options="-parameters" />
+      <module name="goods-zuul" options="-parameters" />
+      <module name="order" options="-parameters" />
+    </option>
+  </component>
+</project>

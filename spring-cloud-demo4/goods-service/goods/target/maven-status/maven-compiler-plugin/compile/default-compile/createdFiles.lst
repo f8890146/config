@@ -1,0 +1,6 @@
+com\demo\goods\controller\HelloController.class
+com\demo\goods\entity\Goods.class
+com\demo\goods\GoodsListApplication.class
+com\demo\goods\controller\GoodsController.class
+com\demo\goods\service\GoodsService.class
+com\demo\goods\service\impl\GoodsServiceImpl.class

@@ -1,0 +1,18 @@
+server:
+  port: 7030
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hzd1:hzd1@localhost:7000/eureka/

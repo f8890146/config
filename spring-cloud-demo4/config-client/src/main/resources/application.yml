@@ -1,0 +1,19 @@
+server:
+  port: 7031
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hzd1:hzd1@localhost:7000/eureka/
+
+spring:
+  application:
+    name: config-client
+  config:
+    import: configserver:http://localhost:7030
+  cloud:
+    config:
+      uri: http://localhost:7030
+      profile: dev
+      name: config-client
+      fail-fast: true
