@@ -4,7 +4,6 @@ server:
 demo:
   message: Hello from Config Server!
 
-# 你的其他业务配置可以加在这里
-spring:
-  application:
-    name: config-client
+# 添加这个配置
+mylog:
+  version: 1.0.0
